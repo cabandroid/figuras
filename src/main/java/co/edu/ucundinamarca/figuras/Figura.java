@@ -9,10 +9,9 @@ package co.edu.ucundinamarca.figuras;
  *
  * @author DAVID
  */
-public class Principal {
+public class Figura {
     
-    public static void main(String[] args) {
+    public Figura(){
         
-        System.out.println("Pruebas git");
     }
 }
