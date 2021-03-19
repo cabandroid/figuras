@@ -7,11 +7,8 @@ package co.edu.ucundinamarca.figuras;
 
 /**
  *
- * @author Sebastian Cortes
+ * @author tibio
  */
-public class Triangulo {
+public class Circulo {
     
-    public Triangulo(){
-        
-    }
 }
