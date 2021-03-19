@@ -7,11 +7,14 @@ package co.edu.ucundinamarca.figuras;
 
 /**
  *
- * @author DAVID
+ * @author Sebastian Cortes
+ * @author David Caballero
  */
-public class Figura {
+public abstract class Figura implements IFigura{
     
     public Figura(){
         
     }
+    
+    public abstract void imprimirInformacion();
 }

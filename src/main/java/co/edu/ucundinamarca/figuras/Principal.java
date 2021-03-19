@@ -7,12 +7,15 @@ package co.edu.ucundinamarca.figuras;
 
 /**
  *
- * @author DAVID
+ * @author Sebastian Cortes
+ * @author David Caballero
  */
 public class Principal {
     
     public static void main(String[] args) {
         
         System.out.println("Pruebas git");
+        
+        System.out.println("Gonorrea");
     }
 }

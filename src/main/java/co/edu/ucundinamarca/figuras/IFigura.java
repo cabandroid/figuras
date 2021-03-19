@@ -7,8 +7,12 @@ package co.edu.ucundinamarca.figuras;
 
 /**
  *
- * @author tibio
+ * @author Sebastian Cortes
+ * @author David Caballero
  */
 public interface IFigura {
     
+    public void area();
+    
+    public void perimetro();
 }

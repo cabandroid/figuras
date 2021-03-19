@@ -8,10 +8,28 @@ package co.edu.ucundinamarca.figuras;
 /**
  *
  * @author Sebastian Cortes
+ * @author David Caballero
  */
-public class Triangulo {
+public class Triangulo extends Figura{
     
     public Triangulo(){
         
     }
+
+    @Override
+    public void imprimirInformacion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void area() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void perimetro() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 }
