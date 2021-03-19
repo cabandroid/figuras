@@ -12,7 +12,7 @@ package co.edu.ucundinamarca.figuras;
  */
 public interface IFigura {
     
-    public void area();
+    public void imprimirInformacion();
     
-    public void perimetro();
+    public void obtenerInformacion();
 }

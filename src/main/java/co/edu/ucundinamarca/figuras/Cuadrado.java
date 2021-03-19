@@ -5,6 +5,8 @@
  */
 package co.edu.ucundinamarca.figuras;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Sebastian Cortes
@@ -12,25 +14,52 @@ package co.edu.ucundinamarca.figuras;
  */
 public class Cuadrado extends Figura{
     
+    private double lado;
+    
     public Cuadrado(){
-        
+        iniciarMetodos();
+    }
+    
+    public void iniciarMetodos(){
+        obtenerInformacion();
+        calcularArea();
+        calcularPerimetro();
+        imprimirInformacion();
+    }
+    @Override
+    public void obtenerInformacion() {
+        Scanner dat = new Scanner(System.in);
+        System.out.println("Ingrese el lado del cuadrado: ");
+        lado = dat.nextDouble(); 
     }
 
     @Override
     public void imprimirInformacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("El area del cuadrado es: "+getArea());
+        System.out.println("El perimetro del cuadrado es: "+getPerimetro());
+    }
+    
+    @Override
+    public void calcularArea() {
+        double area = lado*lado;
+        setArea(area);
     }
 
     @Override
-    public void area() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void calcularPerimetro() {
+        double perimetro = lado*4;
+        setPerimetro(perimetro);
     }
 
-    @Override
-    public void perimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double getLado() {
+        return lado;
     }
 
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+
+    
     
     
 }

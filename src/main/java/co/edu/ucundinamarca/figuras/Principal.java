@@ -12,10 +12,19 @@ package co.edu.ucundinamarca.figuras;
  */
 public class Principal {
     
+    public Principal(){
+         
+        iniciar();
+    }
+
+    public void iniciar(){
+        
+        IFigura cuadrado = new Cuadrado();
+        
+    }
+    
     public static void main(String[] args) {
         
-        System.out.println("Pruebas git");
-        
-        System.out.println("Gonorrea");
+        Principal pri = new Principal();
     }
 }
