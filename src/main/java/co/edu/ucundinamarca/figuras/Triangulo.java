@@ -35,7 +35,7 @@ public class Triangulo extends Figura{
         imprimirInformacion();
     }
     /**
-     * Metodo que obtiene la información del triangulo
+     * Metodo que obtiene la información del triangulo, es decir, los tres lados
      */
     @Override
     public void obtenerInformacion() {        
@@ -48,7 +48,7 @@ public class Triangulo extends Figura{
         LadoTres = dat.nextDouble();
     }
     /**
-     * Metodo que imprimer la información del triangulo
+     * Metodo que imprime la información del triangulo
      */
     @Override
     public void imprimirInformacion() {
@@ -57,7 +57,7 @@ public class Triangulo extends Figura{
     }
     
     /**
-     * Metodo que calcula y asigna el area
+     * Metodo que calcula y asigna el area del triangulo
      */
     @Override
     public void calcularArea() {
@@ -65,7 +65,7 @@ public class Triangulo extends Figura{
         setArea(area);
     }
     /**
-     * Metodo que calcula y asigna el perimetro
+     * Metodo que calcula y asigna el perimetro del triangulo
      */
     @Override
     public void calcularPerimetro() {
@@ -81,6 +81,7 @@ public class Triangulo extends Figura{
     }
     /**
      * Metodo que asigna el ladoUno del Triangulo
+     * @param LadoUno recibe como parametro el primer lado del triangulo
      */
     public void setLadoUno(double ladoUno) {
         this.ladoUno = ladoUno;
@@ -94,6 +95,7 @@ public class Triangulo extends Figura{
     }    
     /**
      * Metodo que asigna el ladoUno del Triangulo
+     * @param LadoDos recibe como parametro el segundo lado del triangulo
      */
     public void setLadoDos(double ladoDos) {
         this.ladoDos = ladoDos;
@@ -107,6 +109,7 @@ public class Triangulo extends Figura{
     }
     /**
      * Metodo que asigna el ladoUno del Triangulo
+     * @param LadoTres recibe como parametro el tercer lado del triangulo
      */
     public void setLadoTres(double LadoTres) {
         this.LadoTres = LadoTres;

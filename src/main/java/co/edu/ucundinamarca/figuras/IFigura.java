@@ -6,13 +6,17 @@
 package co.edu.ucundinamarca.figuras;
 
 /**
- *
+ *Clase tipo Interface para la seguridad y visibilidad de metodos al usuario
  * @author Sebastian Cortes
  * @author David Caballero
  */
 public interface IFigura {
-    
+    /**
+     * Método abstracto para imprimir la información
+     */
     public void imprimirInformacion();
-    
+    /**
+     * Método abstracto para obtener la información
+     */
     public void obtenerInformacion();
 }
