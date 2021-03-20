@@ -40,11 +40,11 @@ public class Triangulo extends Figura{
     @Override
     public void obtenerInformacion() {        
         Scanner dat = new Scanner(System.in);
-        System.out.println("Ingrese el lado del Triangulo: ");
+        System.out.println("Ingrese el primer lado del Triangulo: ");
         ladoUno = dat.nextDouble(); 
-        System.out.println("Ingrese el lado del Triangulo: ");
+        System.out.println("Ingrese el segundo lado del Triangulo: ");
         ladoDos = dat.nextDouble();  
-        System.out.println("Ingrese el lado del Triangulo: ");
+        System.out.println("Ingrese el tercer lado del Triangulo: ");
         LadoTres = dat.nextDouble();
     }
     /**

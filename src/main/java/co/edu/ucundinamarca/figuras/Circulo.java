@@ -5,6 +5,8 @@
  */
 package co.edu.ucundinamarca.figuras;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Sebastian Cortes
@@ -12,32 +14,42 @@ package co.edu.ucundinamarca.figuras;
  */
 public class Circulo extends Figura{
     
+    private double radio;
+    
+    
     public Circulo(){
-        
+        iniciarMetodos();
     }
-
+    
+    public void iniciarMetodos(){
+        obtenerInformacion();
+        calcularArea();
+        calcularPerimetro();
+        imprimirInformacion();
+    }
+    @Override
+    public void obtenerInformacion() {
+        Scanner dat = new Scanner(System.in);
+        System.out.println("Ingrese el radio del circulo: ");
+        radio = dat.nextDouble(); 
+    }
     
     @Override
     public void imprimirInformacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("El area del circulo es: "+getArea());
+        System.out.println("El perimetro del circulo es: "+getPerimetro());
     }
-    
-    @Override
-    public void obtenerInformacion() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+
     @Override
     public void calcularArea() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double area = Math.PI*(Math.pow(radio, 2));
+        setArea(area);
     }
 
     @Override
     public void calcularPerimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double perimetro = 2*Math.PI*radio;
+        setPerimetro(perimetro);
     }
 
-    
-
-    
 }

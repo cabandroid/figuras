@@ -21,10 +21,12 @@ public class Principal {
         
         IFigura cuadrado = new Cuadrado();
         IFigura triangulo = new Triangulo();
+        IFigura circulo = new Circulo();
         
-        IFigura[] vector = new IFigura[2];           
+        IFigura[] vector = new IFigura[3];           
         vector[0] = cuadrado;
         vector[1] = triangulo;
+        vector[2] = circulo; 
         
     }
     
