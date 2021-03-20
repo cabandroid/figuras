@@ -20,6 +20,11 @@ public class Principal {
     public void iniciar(){
         
         IFigura cuadrado = new Cuadrado();
+        IFigura triangulo = new Triangulo();
+        
+        IFigura[] vector = new IFigura[2];           
+        vector[0] = cuadrado;
+        vector[1] = triangulo;
         
     }
     
