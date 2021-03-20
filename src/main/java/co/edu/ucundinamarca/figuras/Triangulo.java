@@ -11,6 +11,7 @@ import java.util.Scanner;
  * Esta clase obtiene los atributos de un triangulo y metodos de Figura
  * @author Sebastian Cortes
  * @author David Caballero
+ * @version 1.0.0
  */
 public class Triangulo extends Figura{
     

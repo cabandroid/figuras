@@ -9,6 +9,7 @@ package co.edu.ucundinamarca.figuras;
  *Clase tipo Interface para la seguridad y visibilidad de metodos al usuario
  * @author Sebastian Cortes
  * @author David Caballero
+ * @version 1.0.0
  */
 public interface IFigura {
     /**

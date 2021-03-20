@@ -6,17 +6,23 @@
 package co.edu.ucundinamarca.figuras;
 
 /**
- *
+ * Clase Inicio(main) de la aplicación
  * @author Sebastian Cortes
  * @author David Caballero
+ * @version 1.0.0
  */
 public class Principal {
     
+    /**
+     * Metodo contructor por defecto que ejecuto el metodo inciar
+     */
     public Principal(){
          
         iniciar();
     }
-
+    /**
+     * Metodo que instacia el vector de objetos
+     */
     public void iniciar(){
         
         IFigura cuadrado = new Cuadrado();
@@ -29,7 +35,10 @@ public class Principal {
         vector[2] = circulo; 
         
     }
-    
+    /**
+     * Metodo que ejecuta el constructor de la clase Matriz
+     * @param args Argumentos del programa
+     */
     public static void main(String[] args) {
         
         Principal pri = new Principal();
