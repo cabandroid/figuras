@@ -6,26 +6,24 @@
 package co.edu.ucundinamarca.figuras;
 
 /**
- * Clase abstracta que tiene tiene como parametros y metodos de figura
- * @author Sebastian Cortes
+ * Clase padre abstracta Figura que implementa la Interface IFigura y posee unos metodos abstractos
  * @author David Caballero
+ * @author Sebastian Cortes
  * @version 1.0.0
  */
 public abstract class Figura implements IFigura{
-    
-    private double area;
-    
-    private double perimetro;
     /**
-     * Metodo contructor por defecto
+     * Variable propia de una figura para el area
      */
-    public Figura(){
-        
-    }
+    private double area;
+    /**
+     * Variable propia de una figura para el perimetro
+     */
+    private double perimetro;
     /**
      * Metodo abstracto para calcular el area de una figura
      */
-    public abstract void calcularArea();    
+    public abstract void calcularArea();
     /**
      * Metodo abstracto para calcular el perimetro de una figura
      */

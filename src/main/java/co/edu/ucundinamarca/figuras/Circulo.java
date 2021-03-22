@@ -8,36 +8,40 @@ package co.edu.ucundinamarca.figuras;
 import java.util.Scanner;
 
 /**
- *Esta clase obtiene los atributos de un Circulo y metodos de Figura
- * @author Sebastian Cortes
+ *Esta clase hija posee los atributos de un Circulo y metodos de Figura, además hereda de la clase Figura
  * @author David Caballero
+ * @author Sebastian Cortes
  * @version 1.0.0
  */
 public class Circulo extends Figura{
-    
+    /**
+     * Variable miembro de un circulo para el radio
+     */
     private double radio;
-    
+
     /**
-     * Metodo contructor por defecto que ejecuto el metodo iniciarMetodos
+     * Metodo que calcula y asigna el area del circulo
      */
-    public Circulo(){
-        iniciarMetodos();
+    @Override
+    public void calcularArea() {
+        double area = Math.PI*(Math.pow(radio, 2));
+        super.setArea(area);
     }
     /**
-     * Inicia todos los metodos de la clase 
+     * Metodo que calcula y asigna el perimetro del circulo
      */
-    public void iniciarMetodos(){
-        obtenerInformacion();
-        calcularArea();
-        calcularPerimetro();
-        imprimirInformacion();
+    @Override
+    public void calcularPerimetro() {
+        double perimetro = 2*Math.PI*radio;
+        super.setPerimetro(perimetro);
     }
-     /**
+    /**
      * Metodo que obtiene la información del circulo, es decir, el radio
      */
     @Override
-    public void obtenerInformacion() {
+    public void capturarInformacion() {
         Scanner dat = new Scanner(System.in);
+        System.out.println("---> CIRCULO <---");
         System.out.println("Ingrese el radio del circulo: ");
         radio = dat.nextDouble(); 
     }
@@ -46,24 +50,8 @@ public class Circulo extends Figura{
      */
     @Override
     public void imprimirInformacion() {
-        System.out.println("El area del circulo es: "+getArea());
-        System.out.println("El perimetro del circulo es: "+getPerimetro());
-    }
-    /**
-     * Metodo que calcula y asigna el area del circulo
-     */
-    @Override
-    public void calcularArea() {
-        double area = Math.PI*(Math.pow(radio, 2));
-        setArea(area);
-    }
-    /**
-     * Metodo que calcula y asigna el perimetro del circulo
-     */
-    @Override
-    public void calcularPerimetro() {
-        double perimetro = 2*Math.PI*radio;
-        setPerimetro(perimetro);
+        System.out.println("El area del circulo es: "+super.getArea());
+        System.out.println("El perimetro del circulo es: "+super.getPerimetro());
     }
     /**
      * Metodo que retorna el radio del circulo
@@ -79,6 +67,5 @@ public class Circulo extends Figura{
     public void setRadio(double radio) {
         this.radio = radio;
     }
-    
     
 }
