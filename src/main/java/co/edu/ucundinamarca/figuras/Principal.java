@@ -5,8 +5,6 @@
  */
 package co.edu.ucundinamarca.figuras;
 
-import java.util.Scanner;
-
 /**
  *Clase Principal (main) de la aplicación
  * @author David Caballero
@@ -27,7 +25,6 @@ public class Principal {
      * Metodo que instacia el vector de objetos y aplica el polimorfismo
      */
     public void iniciar(){
-        Scanner dat = new Scanner(System.in);
         
         IFigura cuadrado = new Cuadrado();
         IFigura rectangulo = new Rectangulo();
@@ -40,11 +37,11 @@ public class Principal {
         vector[2] = triangulo;
         vector[3] = circulo; 
         
-        System.out.println("|-----------------------------------------------------------------------|/n");
-        System.out.println("| BIENVENIDO ESTE ES UN PROGRAMA QUE CALCULA EL AREA Y EL PERIMETRO DE: |/n");
-        System.out.println("|-----------------------------------------------------------------------|\n");
+        System.out.println("|-----------------------------------------------------------------------|");
+        System.out.println("| BIENVENIDO ESTE ES UN PROGRAMA QUE CALCULA EL AREA Y EL PERIMETRO DE: |");
+        System.out.println("|-----------------------------------------------------------------------|");
         System.out.println("|->      Un cuadrado, un rectangulo, un triangulo y un circulo        <-|");
-        System.out.println("|-----------------------------------------------------------------------|\n");
+        System.out.println("|-----------------------------------------------------------------------|");
 
         for (IFigura fig : vector){
             Figura fff;

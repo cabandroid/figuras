@@ -30,27 +30,10 @@ public class Triangulo extends Figura{
      * Metodo que calcula y asigna el area del triangulo
      */
     @Override
-    public void calcularArea() {
-        
-        if((lado1 == lado2) && (lado2 == lado3)){
-            //Equilatero
-            super.setArea((Math.sqrt(3)/4)*Math.pow(lado1, 2));
-            
-        }else if((lado1 == lado2) || (lado2 == lado3) || (lado1 == lado3)){
-            //Isosceles
-            if(lado1 == lado2){
-                super.setArea((lado3*Math.sqrt(Math.pow(lado1, 2)-(Math.pow(lado3, 2)/4)))/2);
-            }else if(lado1 == lado3){
-                super.setArea((lado2*Math.sqrt(Math.pow(lado1, 2)-(Math.pow(lado2, 2)/4)))/2);
-            }else{
-                super.setArea((lado1*Math.sqrt(Math.pow(lado2, 2)-(Math.pow(lado1, 2)/4)))/2);
-            }
-
-        }else{
-            //Escaleno
-            double semPerim = (lado1+lado2+lado3)/2;
-            super.setArea(Math.sqrt(semPerim*(semPerim-lado1)*(semPerim-lado2)*(semPerim-lado3)));
-        }
+    public void calcularArea() {     
+        //teorema de heron
+        double semPerim = (lado1+lado2+lado3)/2;        
+        super.setArea(Math.sqrt(semPerim*(semPerim-lado1)*(semPerim-lado2)*(semPerim-lado3)));
     }
     /**
      * Metodo que calcula y asigna el perimetro del triangulo
